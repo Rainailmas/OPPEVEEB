@@ -9,3 +9,31 @@ img {
   font-weight: bold;
   
 }
+
+.title{
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+.description{
+  font-size: 14px;
+  color: #555;
+  text-align: justify;
+}
+.card .description {
+  text-align: center;
+}
+.card {
+  display: grid;
+  grid-template-columns: max-content auto;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px
+  grid-gap: 5px;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* horizontal centering */
+  justify-content: center;  /* vertical centering */
+  min-height: 300px;        /* 
+}
