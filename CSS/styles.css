@@ -1,12 +1,16 @@
 img {
   width: 100px;
   border-radius: 60px;
-  float: left;
-  margin-right: 20px;
+  margin-left: 20px;
+  max-width: fit-content;
+}
+body {
+  background-color: rgb(210, 209, 201);
 }
 
 .username{
   font-weight: bold;
+  color: #333;
   
 }
 
@@ -14,26 +18,129 @@ img {
   font-weight: bold;
   font-size: 24px;
   text-align: center;
+  color: #333;
 }
 .description{
   font-size: 14px;
   color: #555;
-  text-align: justify;
+  grid-row: 1 / span 2; 
+  align-self: center;  
+  grid-auto-rows: auto;
 }
-.card .description {
-  text-align: center;
-}
+
 .card {
   display: grid;
   grid-template-columns: max-content auto;
-  border: 1px solid #000;
-  border-radius: 5px;
-  padding: 5px
-  grid-gap: 5px;
-  width: max-content;
+  border-radius: 10px;
+  padding: 10px;
+  grid-gap: 10px;
+  width: min-content;
+  align-items: center;
+  justify-content: center ;
+  background-color: #e6e6fa;
+
+}
+.title-grid {
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 0;         /* Ensure no extra space at the top */
+  margin-bottom: 20px;
+  background:#e6e6fa;
+  width: min-content;
+  margin-left: auto;     /* Center horizontally */
+  margin-right: auto;    /* Center horizontally */
+}
+.navigation {
+  display: grid;
+  grid-template-columns: repeat(3, auto); /* One column per link */
+  gap: 10px; /* Space between links */
+  justify-content: center; /* Center the grid horizontally */
+  margin-bottom: 20px;
+}
+
+.navigation a {
+  text-align: center;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #e6e6fa;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.navigation a:hover {
+  background: #d1d1e0;
+}
+
+.sissejuhatus h2 {
+  display: grid;
+  color: #333;
+  background-color: #e6e6fa;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 0;         /* Ensure no extra space at the top */
+  margin-bottom: 20px;
+  background:#e6e6fa;
+  width: min-content;
+ 
+
+}
+
+.teooria h2 {
+  color: #333;
+  display: grid;
+  background-color: #e6e6fa;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 0;         /* Ensure no extra space at the top */
+  margin-bottom: 20px;
+  background:#e6e6fa;
+  width: min-content;
+ 
+}
+
+.kontakt h2 {
+  display: grid;
+  color: #333;
+  background-color: #e6e6fa;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 0;         /* Ensure no extra space at the top */
+  margin-bottom: 20px;
+  background:#e6e6fa;
+  width: min-content;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+.card-wrapper {
+    width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;      /* horizontal centering */
-  justify-content: center;  /* vertical centering */
-  min-height: 300px;        /* 
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;         /* Space from bottom */
+}
+
+.kontakt p {
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+  background-color: #e6e6fa;
+  border-radius: 10px;
+  padding: 10px;
+  width: min-content;
+  margin-left: auto;     /* Center horizontally */
+  margin-right: auto;    /* Center horizontally */
+}
+
+.footer-center {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
 }
