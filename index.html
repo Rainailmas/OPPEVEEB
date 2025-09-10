@@ -9,9 +9,7 @@
   </head>
   <body>
     <header>
-      <div class="title-grid">
-        <div class="title">Õppeveeb</div>
-      </div>
+      <div class="title">Õppeveeb</div>
       <nav class="navigation" aria-label="Põhinavigatsioon">
         <a href="#sissejuhatus">Sissejuhatus</a>
         <a href="#teooria">Teooria</a>
@@ -19,21 +17,30 @@
       </nav>
     </header>
     <main>
+      <img src="images/HTML.avif" alt="HTML image" class="image2" />
       <section class="sissejuhatus" id="sissejuhatus">
         <h2>Sissejuhatus</h2>
         <p>Mis on HTML?</p>
-        <video controls>
+        <div class="video-row">
           <iframe
-            width="560"
+            class="youtube-video"
+            width="420"
             height="315"
-            src="https://www.youtube.com/embed/qz0aGYrrlhU?si=_OY1Err1aTTnvabo"
+            src="https://www.youtube.com/embed/qz0aGYrrlhU?mute=1"
             title="YouTube video player"
             frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
-        </video>
+          <div class="video-text">
+            <p>HTML stands for Hyper Text Markup Language</p>
+            <p>HTML is the standard markup language for creating Web pages</p>
+            <p>HTML describes the structure of a Web page</p>
+            <p>HTML consists of a series of elements</p>
+            <p>HTML elements tell the browser how to display the content</p>
+            <p>HTML elements label pieces of content</p>
+          </div>
+        </div>
       </section>
       <section class="teooria" id="teooria">
         <h2>Teooria</h2>
@@ -62,6 +69,7 @@
           <img
             src="images/IMG_20250829_141004_905.webp"
             alt="Profile picture"
+            class="image1"
           />
           <div>
             <p class="username">@ilusilmad_art</p>
