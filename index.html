@@ -17,7 +17,7 @@
             images/white1-800.jpg  800w,
             images/white1.jpg     1200w
           "
-          sizes="(max-width: 600px) 400px, (max-width: 900px) 800px, 1200px"
+          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 800px, 1200px"
           alt="cover image"
           class="image2"
         />
@@ -35,8 +35,6 @@
         <div class="video-row">
           <iframe
             class="youtube-video"
-            width="420"
-            height="315"
             src="https://www.youtube.com/embed/qz0aGYrrlhU?mute=1"
             title="YouTube video player"
             allow="accelerometer;
@@ -44,8 +42,8 @@
             clipboard-write;
             encrypted-media;
             gyroscope;
-            picture-in-picture
-            allowfullscreen"
+            picture-in-picture"
+            allowfullscreen
           ></iframe>
           <div class="video-text">
             <p>HTML stands for Hyper Text Markup Language</p>
@@ -58,7 +56,7 @@
         </div>
         <p>Siin on näide lihtsast HTML struktuurist:</p>
         <a
-          href="https://www.geeksforgeeks.org/html/html-introduction/"
+          href="https://www.geeksforgeeks.org/html/html-introduction/" id="image3"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -72,21 +70,32 @@
       </section>
       <section class="teooria" id="teooria">
         <h2>Teooria</h2>
-        <p>HTML tähendus.</p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia,
-          magni et? Laborum, placeat maxime. Illo autem voluptatum mollitia id,
-          tempora ad laudantium, repudiandae obcaecati commodi suscipit iusto
-          enim ullam similique fuga. Praesentium ipsam eligendi explicabo! Rerum
-          nihil architecto accusantium dicta voluptatem, nisi atque porro magnam
-          deserunt quibusdam magni quas facilis saepe eos incidunt harum esse.
-          Eaque pariatur, illum tempore minima laboriosam facilis, nesciunt qui
-          magnam temporibus, sed officia corrupti voluptatum. Possimus,
-          reiciendis quos atque mollitia odio unde, dolore quisquam, quibusdam
-          consequatur aliquam hic tempore animi delectus deserunt commodi.
-          Mollitia dicta inventore maiores provident iste deleniti cupiditate
-          animi doloremque labore minus?
-        </p>
+        <div class="teooria-flex">
+          <div class="teooria-text1">
+            <p>ls - näitab mis kasutas sees on</p>
+            <p>cd "kasuta nimi" - liigub kausta</p>
+            <p>mkdir "kasuta nimi" - loob kausta</p>
+            <p>Teekond: cd Documents - cd omanimeline kaust</p>
+            <p>Koodi kloonimine github'ist: git clone git@github.com....</p>
+            <p>
+              Terminalis projekti muudatuste üleslaadimine: github'i git add .
+              git commit -m "sõnum,mida sa muutsid" git push
+            </p>
+            <p>Muudatuste alla tõmbamine github'ist: git pull</p>
+          </div>
+          <div class="teooria-text2">
+            <p> <code>&lt;html lang ="et"&gt;</code> määrab dokumendi alguse ja keele, mis aitab otsimootoritel ja ekraanilugejatel sisu mõista. </p>
+         <p>Päisesse head käib:</p>  
+          <p><code>&lt;meta charset="utf-8"&gt;</code> – määrab, et tekst on UTF-8 kodeeringus (õiged täpitähed).</p>
+            <p>
+              <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code> – seab mobiilse seadme vaate laiuse ja skaala õigeks.
+            </p>
+            <p><code>&lt;title&gt;</code> – lehe nimi, mis kuvatakse brauseri sakil.</p>
+            <p><code>&lt;link rel="stylesheet" href="assets/css/style.css"&gt;</code> – viide välisele CSS-failile.
+</p>
+
+            <p>HTML struktuuri näeb siit:<a href="#image3">HTML struktuur</a></p>
+        </div>
       </section>
       <section class="kontakt" id="kontakt">
         <h2>Kontakt</h2>
@@ -96,12 +105,6 @@
         <div class="card">
           <img
             src="images/IMG_20250829_141004_905.webp"
-            srcset="
-              images/IMG_20250829_141004_905-150.webp 150w,
-              images/IMG_20250829_141004_905-300.webp 300w,
-              images/IMG_20250829_141004_905.webp     600w
-            "
-            sizes="(max-width: 600px) 150px, (max-width: 900px) 300px, 600px"
             alt="Profile picture"
             class="image1"
           />
