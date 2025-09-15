@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <nav class="navigation" aria-label="Põhinavigatsioon">
+        <a href="#sissejuhatus">Sissejuhatus</a>
+        <a href="#teooria">Teooria</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
     <header>
       <div class="container">
         <img
@@ -23,11 +28,6 @@
         />
         <div class="centered">ÕPPEVEEB</div>
       </div>
-      <nav class="navigation" aria-label="Põhinavigatsioon">
-        <a href="#sissejuhatus">Sissejuhatus</a>
-        <a href="#teooria">Teooria</a>
-        <a href="#kontakt">Kontakt</a>
-      </nav>
     </header>
     <main>
       <section class="sissejuhatus" id="sissejuhatus">
@@ -54,11 +54,12 @@
             <p>HTML elements label pieces of content</p>
           </div>
         </div>
-        <p>Siin on näide lihtsast HTML struktuurist:</p>
-        <a
-          href="https://www.geeksforgeeks.org/html/html-introduction/" id="image3"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div class="image3-text">
+          <p>Siin on näide lihtsast HTML struktuurist:</p>
+          <a
+            href="https://www.geeksforgeeks.org/html/html-introduction/" id="image3"
+            target="_blank"
+            rel="noopener noreferrer"
         >
           <img
             src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220401160946/HTML-Basic-Format-768x534.png"
@@ -69,9 +70,13 @@
         </a>
       </section>
       <section class="teooria" id="teooria">
-        <h2>Teooria</h2>
+        <h2>
+    Teooria
+    <img src="images/code-laptop-svgrepo-com.svg" alt="Teooria ikoon" class="svg-icon" />
+  </h2>
         <div class="teooria-flex">
           <div class="teooria-text1">
+            <h3>Terminali käsud</h3>
             <p>ls - näitab mis kasutas sees on</p>
             <p>cd "kasuta nimi" - liigub kausta</p>
             <p>mkdir "kasuta nimi" - loob kausta</p>
@@ -84,6 +89,7 @@
             <p>Muudatuste alla tõmbamine github'ist: git pull</p>
           </div>
           <div class="teooria-text2">
+            <h3>Koodi algus</h3>
             <p> <code>&lt;html lang ="et"&gt;</code> määrab dokumendi alguse ja keele, mis aitab otsimootoritel ja ekraanilugejatel sisu mõista. </p>
          <p>Päisesse head käib:</p>  
           <p><code>&lt;meta charset="utf-8"&gt;</code> – määrab, et tekst on UTF-8 kodeeringus (õiged täpitähed).</p>
@@ -92,11 +98,62 @@
             </p>
             <p><code>&lt;title&gt;</code> – lehe nimi, mis kuvatakse brauseri sakil.</p>
             <p><code>&lt;link rel="stylesheet" href="assets/css/style.css"&gt;</code> – viide välisele CSS-failile.
-</p>
-
+            </p>
             <p>HTML struktuuri näeb siit:<a href="#image3">HTML struktuur</a></p>
         </div>
-      </section>
+        <div class="teooria-text3">
+          <h3>HTML Elemendid</h3>
+          <p><code>&lt;header&gt;</code> – lehe või sektsiooni päis. Tavaliselt sisaldab logo, pealkirja või navigeerimist</p>
+          <p><code>&lt;nav&gt;</code> – spetsiaalne ala, kus paiknevad navigeerimislingid. Ekraanilugejad tunnevad selle ära kui navigeerimise bloki.</p>
+          <p><code>&lt;section&gt;</code> – temaatiline sisublokk, millel on oma pealkiri</p>
+          <p><code>&lt;article&gt;</code> – iseseisev sisutükk, mis võiks ka üksinda avaldatuna tähendust omada</p>
+          <p><code>&lt;aside&gt;</code> – lisainfo, nt küljeriba või viited seotud sisule.</p>
+          <p><code>&lt;footer&gt;</code> – lehe või sektsiooni jalus (autoriõigused, kontaktid).</p>
+          <p><code>padding:</code> – sisemine tühik elemendi sees.</p>
+          <p><code>border:</code> – ääris elemendi ümber.</p>
+          <p><code>display:</code> – määrab, kuidas element kuvatakse (nt block, inline, flex).</p>
+         </div> 
+         <div class="teooria-text4">
+          <h3>Navigeerimine</h3>
+          <img class="image4" src="images/Screenshot 2025-09-15 at 22.21.18.png" alt="Navigeerimise näide">
+            <h3>Kasulikud lingid</h3>
+            <p>
+              <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noopener noreferrer"
+                >Flexbox kasutus</a
+              >
+            </p>
+            <p>
+              <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer"
+                >HTML validaator</a
+              >
+            </p>
+            <p>
+              <a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener noreferrer"
+                >CSS validaator</a
+              >
+            </p>
+            </div>
+         <div class="teooria-text5">
+          <h3>Meedia</h3>
+          <p><code>img</code> – kõige tavalisem viis pildi lisamiseks. Alt-tekst on kohustuslik ligipääsetavuse jaoks.</p>
+          <p><code>picture</code> ja <code>source</code> –võimaldab pakkuda erinevaid failiformaate (nt AVIF, WebP, JPG) ja ekraanisõltuvaid suurusi.</p>
+          <p><code>href</code> – lingi sihtkoht (URL).</p>
+          <p><code>a</code> – Ümbritsedes see image elemendi ümber muutub pilt klikitavaks.</p>
+          <p><code>target="_blank"</code> – Välislinkide puhul kasutada, avab lingi uuel vahelehel.</p>
+          <p><code>rel="noopener noreferrer"</code> – Välislinkide puhul kasutada, turvameede, kui link avatakse uuel vahelehel.</p>
+          <p><code>loading="lazy"</code> – piltide puhul, laadib pildi alles siis, kui see on vaateväljas.</p>
+          <h4>Video</h4>
+          <p><code>&lt;iframe&gt;</code> – võimaldab manustada teise lehe sisu (nt YouTube video).</p>
+          <p><code>allowfullscreen</code> – lubab videol täisekraanil minna.</p>
+          <p><code>video controls</code> – võimaldab manustada video otse lehele.</p>
+          <p><code>source</code> – mitme formaadi tugi (WebM, MP4).</p>
+          <p><code>track</code> – võimaldab lisada subtiitreid.</p>
+          <h4>SVG</h4>
+          <p><code>&lt;svg&gt;</code> – vektorgraafika otse HTML-is.</p>
+          <p><code>&lt;img&gt;</code> – SVG pildi lisamine.</p>
+          <p><code>&lt;object&gt;</code> – interaktiivne SVG lisamine.</p>
+          </div>
+        </section>
       <section class="kontakt" id="kontakt">
         <h2>Kontakt</h2>
         <p>Minu kooli e-post: raina.ilmas@voco.ee</p>
